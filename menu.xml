@@ -38,7 +38,14 @@
 		<item label="Text Editor">
 			<action name="Execute">
 				<command>
-					sublime_text
+					/home/chris/sublime_text_2/sublime_text
+				</command>
+			</action>
+		</item>
+		<item label="RStudio">
+			<action name="Execute">
+				<command>
+					rstudio
 				</command>
 			</action>
 		</item>

@@ -26,7 +26,7 @@ own_window_type desktop
 #own_window_argb_visual yes
 own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 double_buffer yes
-minimum_size 200 200
+minimum_size 200 500
 maximum_width 240
 draw_shades no
 draw_outline no
@@ -53,12 +53,12 @@ ${font :bold:size=8}$alignc${time %A}
 
 ${font Monospace:size=11}$alignc${exec gcal -q GB_EN -s 1}
 
-${font Monospace:bold:size=10}${color 999999}SYSTEM INFO${color 666666}${hr 2}
+${font Monospace:bold:size=10}${color 999999}SYSTEM INFO ${color 666666}${hr 2}
 Host:$alignr$nodename
 Uptime:$alignr$uptime
 $sysname $kernel $alignr $machine
 
-${font Monospace:bold:size=10}${color 999999}PROCESSORS${color 666666}${hr 2}
+${font Monospace:bold:size=10}${color 999999}PROCESSORS ${color 666666}${hr 2}
 
 CPU1  ${cpu cpu1}% ${cpubar cpu1}
 CPU2  ${cpu cpu2}% ${cpubar cpu2}
@@ -80,6 +80,9 @@ ${memgraph 20,240 999999 999999}
 ${font Monospace:bold:size=10}${color 999999}HARD DISK ${color 666666}${hr 2}
 /home $alignc ${fs_used /home} / ${fs_size /home} $alignr ${fs_free_perc /home}%
 ${fs_bar /home}
+
+Read $alignr ${diskio_read}/s
+Write $alignr ${diskio_write}/s
 
 ${font Monospace:bold:size=10}${color 999999}NETWORK ${color 666666}${hr 2}
 IP on eth0 $alignr ${addr eth0}

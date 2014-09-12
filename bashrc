@@ -91,7 +91,7 @@ fi
 #alias la='ls -A'
 #alias l='ls -CF'
 alias lr='ls -lhrt'
-alias mnthydrogen='sshfs -oidmap=user cmb211@hydrogen:/home/cmb211 /home/chris/hydrogen'
+alias mnthydrogen='sshfs -oidmap=user cmb211@hydrogen:/home/molphys/cmb211 /home/chris/hydrogen'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -128,5 +128,7 @@ xrandr --output HDMI1 --primary
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=/home/chris/.rvm/rubies/ruby-2.0.0-p451/bin:$PATH
-PATH=/home/chris/bin/sublimetext2:$PATH
-PATH=/home/chris/documents/scripts/bowtie2:$PATH
+PATH=/home/chris/sublime_text_2:$PATH
+PATH=/home/chris/documents/apps/bowtie2:$PATH
+PATH=/home/chris/documents/apps/bowtie:$PATH
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
