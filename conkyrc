@@ -47,9 +47,9 @@ override_utf8_locale no
 ##############################################
 TEXT
 
-${font Monospace:size=30}$alignc${time %H:%M}
-${voffset -30}${font :bold:size=10}$alignc${time %d %b. %Y}
-${font :bold:size=8}$alignc${time %A}
+${font Monospace:size=32}$alignc${time %H:%M}
+${voffset -26}${font :bold:size=14}$alignc${time %d %b. %Y}
+${voffset -4}${font :bold:size=12}$alignc${time %A}
 
 ${font Monospace:size=11}$alignc${exec gcal -q GB_EN -s 1}
 
